@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: #bb86fc; /* Light purple for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1400px) {
+  #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+  }
+  .about-containers {
+      flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+      height: fit-content;
+      background-color: #1f1f1f; /* Dark background for sections */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+      display: none;
+  }
+  #hamburger-nav {
+      display: flex;
+      background-color: #1f1f1f; /* Dark background for hamburger nav */
+  }
+  #experience,
+  .experience-details-container {
+      margin-top: 2rem;
+      background-color: #1f1f1f; /* Dark background for experience */
+  }
+  #profile,
+  .section-container {
+      display: block;
+      background-color: #1f1f1f; /* Dark background for profile */
+  }
+  .arrow {
+      display: none;
+  }
+  section,
+  .section-container {
+      height: fit-content;
+      background-color: #1f1f1f; /* Dark background for sections */
+  }
+  section {
+      margin: 0 5%;
+  }
+  .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+  }
+  .about-containers {
+      margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+      height: 40vh;
+      background-color: #1f1f1f; /* Dark background for contact and footer */
+  }
+  #about-link {
+      display: none;
+  }
+  #about {
+      height: 83vh;
+      margin-bottom: 0;
+      margin-top: 9vh;
+      padding: 0px;
+      background-color: #1f1f1f; /* Dark background for about section */
+  }
+  .hamburger-icon {
+      padding: 0px;
+  }
+  
+  article {
+      font-size: 1rem;
+      color: #e0e0e0; /* Light text for articles */
+  }
+  footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+  }
+
+  /* Adjustments for Contact Section */
+  .contact-info-upper-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+      background-color: #1f1f1f;
+  }
+
+  .contact-info-container {
+      margin: 10px;
+      background-color: #ffffff; /* White background for the contact info container */
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .icon {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #ffffff !important; /* Ensure white background */
+    border-radius: 50%; /* Make circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* If icons are SVGs or font-based, invert them to white */
+.icon img, 
+.icon svg {
+    filter: invert(1); /* Invert colors (black → white) */
+    width: 24px;
+    height: 24px;
+}
+
+  .experience-sub-title {
+      font-size: 1.25rem;
+      color: #ffffff; /* White for experience subtitles */
+  }
+  .logo {
+      font-size: 1.5rem;
+      color: #ffffff; /* White for logo */
+  }
+  .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+  }
+  .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+      margin-top: 2vh;
+  }
+  .section__text__p2 {
+      font-size: 1.25rem;
+  }
+  .title {
+      font-size: 2rem;
+      color: #ffffff; /* White for titles */
+  }
+  .text-container {
+      text-align: justify;
+      color: #e0e0e0; /* Light text for text container */
+  }
+}
